@@ -1,0 +1,4 @@
+name: BungeeLoginLog
+version: ${project.version}
+author: testusuke
+main: net.testusuke.open.bungeecord.loginlog.Main

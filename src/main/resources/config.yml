@@ -1,0 +1,6 @@
+database:
+  host: "localhost"
+  user: "root"
+  pass: "password"
+  port: "3306"
+  db: "database"
