@@ -25,7 +25,7 @@ class Main: Plugin(),Listener {
     var logDataList: MutableList<LogData> = mutableListOf()
     //  config
     lateinit var configFile: ConfigFile
-    lateinit var config: Configuration
+    var config: Configuration? = null
     //db
     lateinit var dataBase: DataBase
     //  GeoIP
@@ -40,7 +40,7 @@ class Main: Plugin(),Listener {
 
         //  Config
         configFile = ConfigFile(this)
-        config = configFile.config
+        config = configFile.getConfig()
         //  DataBase
         dataBase = DataBase("BungeeLoginLog")
         //  Load DataBase File

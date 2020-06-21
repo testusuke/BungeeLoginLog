@@ -36,11 +36,11 @@ class DataBase(private val prefix: String) {
     }
 
     fun loadConfig() {
-        host = plugin.config.getString("database.host")
-        user = plugin.config.getString("database.user")
-        pass = plugin.config.getString("database.pass")
-        port = plugin.config.getString("database.port")
-        db = plugin.config.getString("database.db")
+        host = plugin.config?.getString("database.host")
+        user = plugin.config?.getString("database.user")
+        pass = plugin.config?.getString("database.pass")
+        port = plugin.config?.getString("database.port")
+        db = plugin.config?.getString("database.db")
     }
 
     private fun loadClass() {
